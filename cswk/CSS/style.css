@@ -1,0 +1,54 @@
+/*Form borders*/
+form{
+    border: 3px solid #DBC9DF;
+}
+/*Width inputs*/
+input[text],input[password]{
+    width: 90%;
+    padding: 10px 25px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px mediumturquoise;
+    box-sizing: border-box;
+}
+/*Buttons style effect*/
+button{
+    background-color: aquamarine;
+    color: whitesmoke;
+    padding: 12px 18px;
+    margin: 12px 2.5px;
+    border: lightblue;
+    cursor: wait;
+    width: 92%;
+}
+/*Button hover effect*/
+button:hover{
+    opacity: 1.2;
+}
+/*Additional style for Cancel Button*/
+.cancelbtn{
+    width:max-content;
+    padding: auto;
+    background-color: lightblue;
+}
+/*Centering image inside container*/
+.imgcontainer{
+    text-align: center;
+    margin: 22px 2px 18px 2px;
+}
+/*Scenery image*/
+img.scenery{
+    width: 50%;
+    border-radius:60%;
+}
+/*Padding to containers*/
+.container{
+    padding: auto;
+}
+/*Forgot Password*/
+span.pswd{
+    float:right;
+    padding-top: auto;
+}
+
+
