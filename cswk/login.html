@@ -3,47 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <title>Peer Login</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="../unsemantic-grid-responsive-tablet.css">
-
 </head>
 <body>
-
 <main class = "grid-container">
     <form method="post" action="/server/loginSystem.html" id = "Loginform">
-        <div class = grid-100>
             <div class = "header1">
-
+                <div class = grid-100>
                 <div class = "logo">
                     <img src = "#">
                 </div>
 
-                <div class = "Login" >
-                    <table >
-                        <tr >
-                        <p>Login to PeerReview  <br> or Create an Account </p>
-                        </tr>
-                        <tr >
-                            <td> Email or Username </td>
-                        </tr>
-                        <tr>
-                            <td><input  class="login-txt" type="email" name="username" placeholder="Enter Your Email" ></td>
-                        </tr>
-                        <tr>
-                            <td>Password</td>
-                        </tr>
-                        <tr>
-                            <td><input class="login-txt" type="Password" name="Password" placeholder="Enter Your Password"></td>
-                        <tr>
-                            <td><input type="Submit" name="Login" value="Login" class="btn"></td>
-                        </tr>
-                    </table>
-                    <tr>
-                        <tr><a href="#">Forgotten Password?</a></tr>
-                    </tr>
+                <div class = "login" >
+                <table >
+                    <tr >
+                        <td> Email(Username)</td>
+                        <td><input  class="login-txt" type="email" name="username" placeholder="Enter Email(Username)" ></td>
+                        <td>Password</td>
+                        <td><input class="login-txt" type="Password" name="Password" placeholder="Enter Password"></td>
+                        <td>&nbsp</td>
+                        <td><input type="Submit" name="Login" value="Login" class="btn"></td>
+                        <td> <a href="#">Forgotten Password?</a></td>
+                </tr>
+                </table>
+            </div>
                 </div>
             </div>
-        </div>
     </form>
-</main>
 
+    <div id = "title"><br>
+        <h1><b>Peer Review</b></h1>
+        <h2>Create an Account </h2>
+    </div>
+
+
+    <section class = grid-50>
+        <div id = "AdminForm">
+            <form method="post" action="../server/Admin_Sign-Up.html">
+                    <h2>Create Admin Account</h2>
+                    <div class="input">
+                            <label>Full Name</label>
+                            <input type="text" name="=fname" placeholder="Full name">
+                        </div>
+                        <div class="input">
+                            <label>Username</label>
+                            <input type="text" name="username" placeholder="Username">
+                            <div class="input">
+                                <label>Department</label>
+                                <input type="dept" name="dept" placeholder="Dept">
+                            </div>
+                            <div class="input">
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="input">
+                                <label>Password</label>
+                                <input type="password" name="password0" placeholder="Password">
+                            </div>
+                            <div class="input">
+                                <label>Confirm Password</label>
+                                <input type="password" name="password1" placeholder="Confirm Password">
+                            </div>
+                            <div class="input">
+                                <button type="submit" name="AdminReg" class="btn">Register as Admin</button>
+                            </div>
+                        </div>
+            </form>
+        </div>
+    </section>
+
+
+                <section class = grid-50>
+                    <div id = "StudForm">
+                        <form method="post" action="../server/Student_Sign-Up.html">
+                            <h2>Create Student Account</h2>
+                            <div class="input">
+                                <label>Full Name</label>
+                                <input type="text" name="fname_std" placeholder="Full name">
+                            </div>
+                            <div class="input">
+                                <label>Username</label>
+                                <input type="text" name="username_std" placeholder="Username">
+                            </div>
+                            <div class="input">
+                                <label>Study Programme </label>
+                                <input type="prog" name="prog" placeholder="Program">
+                            </div>
+                            <div class="input">
+                                <div class="input">
+                                    <label>Email</label>
+                                    <input type="email" name="email_std" placeholder="Email">
+                                </div>
+                                <div class="input">
+                                    <label>Password</label>
+                                    <input type="password" name="password_std" placeholder="Password">
+                                </div>
+                                <div class="input">
+                                    <label>Confirm Password</label>
+                                    <input type="password" name="password1_std" placeholder="Confirm Password">
+                                </div>
+                                <div class="input">
+                                    <button type="Submit" name="StudReg" class="btn">Register as Student</button>
+                                </div>
+                            </div>
+                        </form>
+                                </div>
+                </section>
+</main>
+</body>
+</html>

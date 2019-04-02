@@ -1,54 +1,140 @@
-/*Form borders*/
-form{
-    border: 3px solid #DBC9DF;
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    font-family:"Times New Roman";
+    padding: 0;
+    font-size: 18px;
+    background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size:50%;
+    display: block;
+
 }
-/*Width inputs*/
-input[text],input[password]{
-    width: 90%;
-    padding: 10px 25px;
-    margin: 10px;
-    display: inline-block;
-    border: 1px mediumturquoise;
-    box-sizing: border-box;
+header {
+    background-color:cornflowerblue;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
 }
-/*Buttons style effect*/
-button{
-    background-color: aquamarine;
-    color: whitesmoke;
-    padding: 12px 18px;
-    margin: 12px 2.5px;
-    border: lightblue;
-    cursor: wait;
-    width: 92%;
+
+.header1{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: lightskyblue;
+    top:2px;
+    left:2px;
+    color:lemonchiffon;
+    z-index:2;
+    font-family:"Times New Roman";
 }
-/*Button hover effect*/
-button:hover{
-    opacity: 1.2;
+
+.control-logo{
+    width: 100%;
+    height:250px;
+    margin-left:auto ;
+    margin-right: auto;
 }
-/*Additional style for Cancel Button*/
-.cancelbtn{
-    width:max-content;
-    padding: auto;
-    background-color: lightblue;
+
+.logo {
+    float: left;
 }
-/*Centering image inside container*/
-.imgcontainer{
+
+.logo img{
+    height:35px;
+    width:190px;
+    margin: 15px;
+}
+
+.login{
+    float: right;
+    font-family:"Times New Roman";
+    font-size: 20px;
+    margin-top: 8px;
+    color: black;
+}
+
+#loginForm {
+    background: darkslateblue;
+    border:blue;
+}
+
+.btn{
+    color: dodgerblue;
+    padding:8px 12px;
+    border: none;
+    border-radius:2px;
+    border-left: 2px;
+
+}
+
+.login a{
+    color: black;
+    text-decoration:darkblue;
+
+}
+
+
+.input{
+    margin: 10px 2px;
+}
+
+#title {
+    color: blue;
     text-align: center;
-    margin: 22px 2px 18px 2px;
 }
-/*Scenery image*/
-img.scenery{
-    width: 50%;
-    border-radius:60%;
+.input label{
+    display: block;
+    text-align: left;
+    margin: 3px;
+    text-size: 16px;
 }
-/*Padding to containers*/
-.container{
-    padding: auto;
+
+.input input{
+    height:40px;
+    width: 90%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px #717171;
+
 }
-/*Forgot Password*/
-span.pswd{
-    float:right;
-    padding-top: auto;
+
+form{
+    width:35%;
+    margin-top: 50px;
+    padding: 10px;
+    border: 1px solid #1049b1;
+    background: dodgerblue;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50%;
+    text-align: center;
 }
 
 
+
+form>h2 {
+    text-align: center;
+    color: #443843;
+}
+
+.login-txt2 {
+    position: fixed;
+    text-align: right;
+    height: 10%;
+    right: 10px;
+    top: 5px;
+    float: right;
+    width: 210px;
+    margin-left: 9%;
+    color: black;
+}
+
+.btnn{
+    float: right;
+    margin-left: 6%;
+    font-size: 18px;
+    margin-top: 6%;
+}
